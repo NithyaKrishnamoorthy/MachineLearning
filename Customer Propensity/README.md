@@ -51,15 +51,16 @@ The models were evaluated based on recall and F1-Score. In this case, the outcom
 ![image](https://user-images.githubusercontent.com/25719700/128673275-a8351187-4d05-4d57-8f7d-f79626bbaffc.png)
 
 ### Conclusion
-Observations
+Observations<br>
 Data quality was the main issue in this case study. There were both a significant imbalanced class distribution and a non-negligible amount of unknown values. Some data had to be excluded during the data pre-processing. The dominant features selected from the feature ranking process were “static” for most of them across all observations, which provide only very limited information to the training model, with little room for improvement. Another dataset limitation was the customer profile, where only 3% of observations had a past contact outcome. This is a critical limitation for the prediction of campaign success rate.     
 
-Learning
+Learning<br>
 The main take away from the case study results is that data pre-processing was critical. The results raise the question of using a combined classifier instead, since a single classifier may not be working well for all classes. Regarding the top features that have been identified, some of them will not be very useful for the bank to take an action on. Indeed, social and economic data are cyclical, tend to be static, and are out of control for the bank. 
 
-Recommendations
+Recommendations<br>
 The first recommendation is about the data collection process. In order to improve the quality and relevance of the data,it is suggested to the bank to collect data with more granularity in terms of data attributes (such as income, type of financial products already held by the customer, etc.). It is also crucial to improve the data granularity in terms of distribution (there is currently a significant imbalanced between existing and new customers, as well as customer who have already accepted an offer versus those who have not). 
 The second recommendation is linked to the campaign strategy. The case study results have highlighted the dominant effect coming from social and economic aspects. The bank can prioritize resources to contact customers during favorable economic cycle. For new customer, retirees and students (age feature) as well as people holding university degree (education feature) tend to respond better to the offer. At that point, it is unclear if the unified machine learning model was not satisfactory due to data quality issue or features specificities. As the bank broaden their customer and accumulate more contact data, we might be able to use a unified model to train and achieve better accuracy as more data become more available
+
 For further research
 Based on the results, the recommendation is to explore the possibility to use a 2-classifier model, based on customer’s relationship with the bank – as illustrated by the following figure. The rationale is that one-size-fit-all solution is not the most optimal approach. Exploring a 2-classifier model approach may provide better prediction results.
  
