@@ -46,7 +46,7 @@ The classification techniques selected for this study were based on the comparis
 
 Evaluation:
 
-The models were evaluated based on recall and F1-Score. In this case, the outcome is to predict whether the client will subscribe to term deposits or not. So a high recall is preferred where the models predit the most number of positive results.
+The models were evaluated based on recall and F1-Score. In this case, the outcome is to predict whether the client will subscribe to term deposits or not. So a high recall is preferred where the models predict the most number of positive results.
 
 ![image](https://user-images.githubusercontent.com/25719700/128673275-a8351187-4d05-4d57-8f7d-f79626bbaffc.png)
 
